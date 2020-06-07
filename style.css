@@ -30,7 +30,7 @@ body {
   background-position: center; /*top...*/
   background-attachment: fixed;
   min-height: 600px;
-  animation: blurTransition 3s;
+  animation: blurTransition 2.2s ease-in forwards;
 }
 
 .logoBox {
@@ -74,7 +74,7 @@ body {
 .secondaryText {
   font-size: 0.55em;
   display: block;
-  letter-spacing: 1.6rem;
+  letter-spacing: 1.5rem;
   text-align: center;
 
   animation: moveFromLeft;
