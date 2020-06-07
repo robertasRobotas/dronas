@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <script>
+      // document.addEventListener('contextmenu', (event) =>
+      //   event.preventDefault()
+      // );
+
+      let portfolioButton = document.getElementsByClassName('headingButton');
+      let headerText = document.getElementsByClassName('headingText');
+
+      window.addEventListener('scroll', () => {
+        headerText[0].style.transform = `translate(-50%, calc(-50% - (${window.pageYOffset}px)/3))`;
+        portfolioButton[0].style.opacity = `calc( 1000 / ( ${window.pageYOffset} * 8 ) - 0.2 )`;
+        portfolioButton[0].style.transform = `translate(-50%, calc(-50% - (${window.pageYOffset}px)/4))`;
+
+        console.log(portfolioButton[0].getBoundingClientRect());
+      });
+    </script>
+
+    <header class="headerPage">
+      <div class="logoBox">
+        <img class="logo" alt="dronas" src="./images/droneLogoWhite.png" />
+      </div>
+      <h1 class="headingText">
+        <span class="primaryText">DRONE SHOT</span>
+        <span class="secondaryText">AREAL VIDEOGRAPHY</span>
+      </h1>
+      <a href="#examplesPage" class="headingButton">See Examples</a>
+    </header>
+
+    <section class="examplesPage" id="examplesPage">
+      <h1 class="pageText">
+        <span class="pageTitle">SOME FOOTAGE</span>
+      </h1>
+      <div class="portfolioWrapper">
+        <iframe
+          class="youtubePlayer"
+          src="https://www.youtube.com/embed/ZeqWRQpSkVE"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="youtubePlayer"
+          src="https://www.youtube.com/embed/k1_rA3X2JAI"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="pricePage">
+      <h1 class="pageText">
+        <span class="pageTitle">Service Plans</span>
+      </h1>
+      <div class="plansWrapper">
+        <div class="plan">
+          <div class="planTitle">Basic</div>
+          <hr class="plansTitleSeparation" />
+          <div class="planOption">Areal videography</div>
+          <div class="planOption">All footage to you</div>
+          <div class="priceTag">
+            <span class="currencySign">€</span>
+            <span class="basePrice">25</span>
+            <span class="timeUnit">/h</span>
+          </div>
+        </div>
+        <div class="plan premiumPlan">
+          <div class="planTitle">Happyness</div>
+          <hr class="plansTitleSeparation" />
+          <div class="planOption">Areal videography</div>
+          <div class="planOption">Short movie</div>
+          <div class="planOption">Instagam clip</div>
+          <div class="planOption">Some shots from the ground</div>
+          <div class="priceTag">
+            <span class="currencySign">€</span>
+            <span class="basePrice">25</span>
+            <span class="timeUnit">/h</span>
+            <span class="additionalPrice"
+              >+130<span class="additionalPriceCurrencySign">€</span></span
+            >
+          </div>
+        </div>
+        <div class="plan">
+          <div class="planTitle">Storry</div>
+          <hr class="plansTitleSeparation" />
+          <div class="planOption">Areal videography</div>
+          <div class="planOption">Short movie</div>
+          <div class="priceTag">
+            <span class="currencySign">€</span>
+            <span class="basePrice">25</span>
+            <span class="timeUnit">/h</span>
+            <span class="additionalPrice"
+              >+90<span class="additionalPriceCurrencySign">€</span></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contactsPage">
+      <h1 class="pageText">
+        <span class="pageTitle">Contacts</span>
+      </h1>
+      <div class="contactsInfo">
+        <span>+370 60987494</span>
+        <span>r.ankudovicius@gmail.com</span>
+        <div class="socialLinks">
+          <a
+            class="socialLink"
+            href="https://www.facebook.com/vaibasimage/"
+            target="_blank"
+          >
+            <img
+              class="socialLinkImage"
+              alt="facebook"
+              src="./images/facebook.png"
+            />
+          </a>
+          <a
+            class="socialLink"
+            href="https://www.youtube.com/channel/UC_GX2EIw_M_Plv_6kgoxcqA"
+            target="_blank"
+          >
+            <img
+              class="socialLinkImage"
+              alt="youtube"
+              src="./images/youtube.png"
+            />
+          </a>
+          <a
+            class="socialLink"
+            href="https://www.instagram.com/vaibasimage/"
+            target="_blank"
+          >
+            <img
+              class="socialLinkImage"
+              alt="instagram"
+              src="./images/instagram.png"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
