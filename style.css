@@ -30,6 +30,7 @@ body {
   background-position: center; /*top...*/
   background-attachment: fixed;
   min-height: 600px;
+  animation: blurTransition 3s;
 }
 
 .logoBox {
@@ -135,6 +136,16 @@ body {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes blurTransition {
+  0% {
+    filter: blur(3px);
+  }
+
+  100% {
+    filter: blur(0);
   }
 }
 
