@@ -55,6 +55,8 @@ body {
   padding: 0.5rem;
   text-align: center;
   border-radius: 0.5rem;
+  width: 100%;
+  padding: 1em;
 
   transform-style: preserve-3d;
 
@@ -72,9 +74,9 @@ body {
 }
 
 .secondaryText {
-  font-size: 0.55em;
+  font-size: 0.65em;
   display: block;
-  letter-spacing: 1.5rem;
+  letter-spacing: 1.9rem;
   text-align: center;
 
   animation: moveFromLeft;
@@ -376,7 +378,7 @@ body {
   }
 
   .secondaryText {
-    font-size: 0.55em;
+    font-size: 0.45em;
     letter-spacing: 11px;
   }
 
