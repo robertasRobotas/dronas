@@ -160,7 +160,7 @@ body {
   text-align: center;
   left: 50%;
   top: 60%;
-  width: 200px;
+  width: 150px;
   transform: translate(-50%, -50%);
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -169,7 +169,7 @@ body {
   padding: 0.5rem 2rem;
   border-radius: 1.5rem;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 1rem;
   letter-spacing: 0.5rem;
   display: inline-block;
   transition: 0.2s;
@@ -181,7 +181,7 @@ body {
 .headingButton:hover {
   transform: translate(-50%, -52%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  font-size: 13px;
+  font-size: 1.05rem;
 }
 
 .headingButton:active {
@@ -375,6 +375,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  .headingButton:link,
+  .headingButton:visited {
+    width: 130px;
+    font-size: 0.8rem;
+  }
+
   .pageText {
     font-size: 1.5rem;
   }
