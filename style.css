@@ -377,8 +377,8 @@ body {
 @media only screen and (max-width: 600px) {
   .headingButton:link,
   .headingButton:visited {
-    width: 130px;
-    font-size: 0.8rem;
+    width: 100px;
+    font-size: 0.75rem;
   }
 
   .pageText {
